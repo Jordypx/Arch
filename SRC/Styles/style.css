@@ -25,6 +25,39 @@ body {
   outline: none;
 }
 
+h1 {
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -1.2px;
+  color: white;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1.42857px;
+}
+
+p {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: white;
+}
+
+.btn {
+  padding: 24px 32px;
+  background: #1b1d23;
+  border: none;
+  color: white;
+  font-family: Spartan;
+  text-align: right;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 500;
+}
+
 nav {
   height: 96px;
   display: flex;
@@ -105,5 +138,100 @@ nav ul li:last-child {
   z-index: 100;
   height: 235px;
   top: 95px;
+}
+
+.hero {
+  height: 560px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 140px;
+}
+
+.hero__textbox {
+  height: 340px;
+  margin: 110px 32px;
+}
+
+.hero__textbox h1 {
+  margin-bottom: 15px;
+}
+
+.hero__textbox p {
+  margin-bottom: 57px;
+}
+
+.hero__image-div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.hero__image {
+  width: 100%;
+  height: 100%;
+}
+
+.arrow {
+  position: relative;
+  top: 5px;
+  left: 10px;
+}
+
+.welcome {
+  margin-bottom: 80px;
+}
+
+.welcome__textbox {
+  width: 311px;
+  margin: 0 auto;
+}
+
+.welcome__textbox h2 {
+  color: #1b1d23;
+  margin-bottom: 29px;
+}
+
+.welcome__textbox p {
+  color: #1b1d23;
+}
+
+.about-us {
+  height: 560px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 140px;
+}
+
+.about-us__textbox {
+  height: 200px;
+  margin: 180px 32px;
+}
+
+.about-us__textbox h1 {
+  margin-bottom: 15px;
+  color: white;
+}
+
+.about-us__textbox p {
+  margin-bottom: 57px;
+}
+
+.about-us__image-div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.about-us__image {
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */

@@ -23,3 +23,40 @@ body {
 *:focus {
     outline: none;
 }
+
+h1 {
+    font-size: $font-med;
+    line-height: $font-med;
+    letter-spacing: -1.2px;
+    color: $white;
+    font-weight: $bold;
+}
+
+h2 {
+    font-size: $font-normal;
+    line-height: $font-med;
+    letter-spacing: -1.42857px;
+}
+
+// h3 {
+// }
+// h4 {
+// }
+p {
+    font-weight: $regular;
+    font-size: $font-xsm;
+    line-height: 25px;
+    color: $white;
+}
+
+.btn {
+    padding: 24px 32px;
+    background: $dark-blue;
+    border: none;
+    color: $white;
+    font-family: Spartan;
+    text-align: right;
+    font-size: $font-xsm;
+    line-height: 25px;
+    font-weight: 500;
+}
