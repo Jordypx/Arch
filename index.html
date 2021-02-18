@@ -22,9 +22,9 @@
 
       </button>
       <ul class="menu">
-        <li class="underline"><a href="/src/Pages/portfolio.html">Portfolio</a></li>
-        <li class="underline"><a href="/src/Pages/about.html"> About Us </a></li>
-        <li class="underline"><a href="/src/Pages/contact.html">Contact</a></li>
+        <li><a href="/src/Pages/portfolio.html">Portfolio</a></li>
+        <li><a href="/src/Pages/about.html"> About Us </a></li>
+        <li><a href="/src/Pages/contact.html">Contact</a></li>
       </ul>
     </nav>
   </div>
@@ -35,6 +35,8 @@
       <div class="hero">
         <div class="hero__image-div">
           <img src=" /assets/home/mobile/image-hero-paramour.jpg" alt="" class="hero__image">
+          <img src="/assets/home/tablet/image-hero-paramour.jpg" alt="" class="hero__image-tablet">
+
         </div>
         <div class="hero__textbox">
           <h1> Project Paramour</h1>
@@ -55,7 +57,7 @@
     <div class="container">
       <div class="welcome">
         <div class="welcome__textbox">
-          <h2> Welcome to Arch Studio
+          <h2> Welcome to<br class="tablet"> Arch Studio
           </h2>
           <p>We have a unique network and skillset to help bring your projects to life. Our
             small team of highly skilled individuals combined with our large network put us
@@ -133,11 +135,43 @@
     </div>
 
   </section>
+
+  <section>
+    <div class="container">
+      <div class="footer">
+        <div class="footer__image-div">
+          <img src="/assets/logo - white.svg" alt="">
+        </div>
+        <div>
+          <ul class="footer__list">
+            <li class="">
+              <a class="footer__links " href="/src/Pages/portfolio.html"> Portfolio
+              </a>
+            </li>
+            <li>
+              <a class="footer__links" href="/src/Pages/about.html"> About Us
+              </a>
+            </li>
+            <li>
+              <a class="footer__links" href="/src/Pages/contact.html"> Contact
+              </a>
+            </li>
+          </ul>
+          <form method="get" action="/SRC/Pages/portfolio.html">
+            <button type="submit" class="footer__btn btn"> See Our Portfolio <img src="/assets/icons/icon-arrow.svg"
+                class="arrow">
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
   <!-- 
-
- 
-
-
   Seraph Station
 
   The Seraph Station project challenged us to design a unique station that would
@@ -183,15 +217,12 @@
   2
  
 
-  3
-  
+  3 -->
 
-  Portfolio
-  About Us
-  Contact
 
-  See Our Portfolio -->
-  <script src="/app.js"> </script>
+
+
+  <script src=" /app.js"> </script>
 </body>
 
 </html>

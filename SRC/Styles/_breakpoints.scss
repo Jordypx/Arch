@@ -1,0 +1,84 @@
+@media screen and (min-width: 768px) {
+    .container {
+        width: 573px;
+        margin: 0 auto;
+    }
+    .hero {
+        height: 720px;
+        &__image {
+            display: none;
+            &-tablet {
+                display: inline;
+            }
+        }
+
+        &__textbox {
+            height: 361px;
+            margin: 180px 58px;
+            h1 {
+                font-size: $font-lg;
+                line-height: $font-lg;
+                letter-spacing: -2px;
+            }
+            p {
+                margin-bottom: 57px;
+            }
+        }
+    }
+
+    .hamburger__button {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        margin-right: 3.95px;
+        li {
+            margin-top: 64px;
+            padding: 0;
+            margin-right: 8px;
+            a {
+                font-size: $font-xsm;
+                line-height: 25px;
+                color: $grey;
+            }
+        }
+        li:first-child {
+            margin-top: 64px;
+            margin-right: 8px;
+        }
+    }
+    nav {
+        height: unset;
+        padding-bottom: 15px;
+    }
+    .logo {
+        margin-top: 56px;
+    }
+    .container {
+        width: 572px;
+    }
+    .welcome__textbox {
+        width: unset;
+        h2 {
+            color: $black;
+            margin-bottom: 56px;
+            font-size: $font-upper-med;
+            line-height: $font-upper-med;
+        }
+        p {
+            color: $black;
+            margin-bottom: 200px;
+        }
+    }
+
+    .about-us__textbox {
+        height: 224px;
+        margin: 168px 58px;
+        h2 {
+            font-size: $font-upper-med;
+            line-height: $font-upper-med;
+            letter-spacing: -2px;
+        }
+    }
+}

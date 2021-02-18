@@ -182,6 +182,10 @@ nav ul li:last-child {
   left: 10px;
 }
 
+.hero__image-tablet {
+  display: none;
+}
+
 .welcome {
   margin-bottom: 80px;
 }
@@ -217,6 +221,13 @@ nav ul li:last-child {
 .about-us__textbox h2 {
   color: white;
   margin-bottom: 32px;
+}
+
+.about-us__textbox .hero__btn {
+  width: 187px;
+  height: 72px;
+  padding: 0px;
+  text-align: center;
 }
 
 .about-us__image-div {
@@ -285,5 +296,135 @@ nav ul li:last-child {
   padding: 0px;
   text-align: center;
   font-weight: 700;
+  margin-bottom: 132px;
+}
+
+.footer {
+  background-color: #f0f0f5;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__image-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  background-color: #1b1d23;
+  position: absolute;
+  top: -60px;
+}
+
+.footer__btn {
+  width: 311px;
+  height: 72px;
+  padding: 0px;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 48px;
+}
+
+.footer li {
+  text-decoration: none;
+  margin-bottom: 32px;
+  list-style: none;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #7f8490;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.footer .footer__list {
+  padding-top: 92px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 573px;
+    margin: 0 auto;
+  }
+  .hero {
+    height: 720px;
+  }
+  .hero__image {
+    display: none;
+  }
+  .hero__image-tablet {
+    display: inline;
+  }
+  .hero__textbox {
+    height: 361px;
+    margin: 180px 58px;
+  }
+  .hero__textbox h1 {
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: -2px;
+  }
+  .hero__textbox p {
+    margin-bottom: 57px;
+  }
+  .hamburger__button {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    margin-right: 3.95px;
+  }
+  .menu li {
+    margin-top: 64px;
+    padding: 0;
+    margin-right: 8px;
+  }
+  .menu li a {
+    font-size: 15px;
+    line-height: 25px;
+    color: #7f8490;
+  }
+  .menu li:first-child {
+    margin-top: 64px;
+    margin-right: 8px;
+  }
+  nav {
+    height: unset;
+    padding-bottom: 15px;
+  }
+  .logo {
+    margin-top: 56px;
+  }
+  .container {
+    width: 572px;
+  }
+  .welcome__textbox {
+    width: unset;
+  }
+  .welcome__textbox h2 {
+    color: #1b1d23;
+    margin-bottom: 56px;
+    font-size: 58px;
+    line-height: 58px;
+  }
+  .welcome__textbox p {
+    color: #1b1d23;
+    margin-bottom: 200px;
+  }
+  .about-us__textbox {
+    height: 224px;
+    margin: 168px 58px;
+  }
+  .about-us__textbox h2 {
+    font-size: 58px;
+    line-height: 58px;
+    letter-spacing: -2px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
