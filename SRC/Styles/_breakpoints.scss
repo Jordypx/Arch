@@ -3,8 +3,15 @@
         width: 573px;
         margin: 0 auto;
     }
+    .tablet {
+        display: inline;
+    }
+    .mobile {
+        display: none;
+    }
     .hero {
         height: 720px;
+        margin-bottom: 74px;
         &__image {
             display: none;
             &-tablet {
@@ -66,19 +73,120 @@
             font-size: $font-upper-med;
             line-height: $font-upper-med;
         }
+        h1 {
+            font-weight: $bold;
+            font-size: 120px;
+            line-height: 200px;
+            letter-spacing: -3px;
+            color: $very-light-grey;
+        }
         p {
             color: $black;
             margin-bottom: 200px;
         }
     }
-
-    .about-us__textbox {
-        height: 224px;
-        margin: 168px 58px;
+    .about-us {
+        margin-bottom: 200px;
+        &__textbox {
+            height: 224px;
+            margin: 168px 58px;
+            h2 {
+                font-size: $font-upper-med;
+                line-height: $font-upper-med;
+                letter-spacing: -2px;
+            }
+        }
+    }
+    .featured {
+        margin: unset;
+        padding: unset;
+        width: unset;
+        margin-bottom: 200px;
         h2 {
             font-size: $font-upper-med;
             line-height: $font-upper-med;
             letter-spacing: -2px;
+        }
+        &__textbox {
+            left: 40px;
+        }
+    }
+    .featured__tablet {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 85px;
+    }
+    .featured__btn-header {
+        width: 169px;
+        height: 72px;
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+    }
+
+    .featured__overlay {
+        display: none;
+    }
+    .featured__image {
+        display: none;
+    }
+    .featured__overlay-tablet {
+        display: inline;
+        width: 573px;
+        height: 240px;
+        opacity: 0.4;
+        background-color: black;
+        position: absolute;
+    }
+    .featured__image-tablet {
+        display: inline-block;
+        margin-bottom: 24px;
+    }
+    .featured__card {
+        background: unset;
+    }
+    .footer {
+        height: 120px;
+        margin-bottom: 0px;
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        justify-content: flex-start;
+        position: relative;
+        &__image-div {
+            position: relative;
+            top: 0px;
+            margin-right: 40px;
+        }
+        &__btn {
+            width: 252px;
+            height: 72px;
+            padding: 0px;
+            text-align: center;
+            font-weight: $bold;
+            position: relative;
+            margin-bottom: 0px;
+        }
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            right: -190px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .footer__list {
+            padding: 0px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        ul {
+            li {
+                margin: 0 auto;
+                margin-right: 56px;
+            }
         }
     }
 }

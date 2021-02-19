@@ -57,6 +57,7 @@
     <div class="container">
       <div class="welcome">
         <div class="welcome__textbox">
+          <h1 class="tablet">Welcome</h1>
           <h2> Welcome to<br class="tablet"> Arch Studio
           </h2>
           <p>We have a unique network and skillset to help bring your projects to life. Our
@@ -97,38 +98,59 @@
   <section>
     <div class="container">
       <div class="featured">
-        <h2>Featured</h2>
+        <div class="featured__tablet">
+
+          <h2>Featured</h2>
+          <form method="get" action="/SRC/Pages/portfolio.html">
+            <button type="submit" class="featured__btn-header btn tablet"> See all
+              <img src="/assets/icons/icon-arrow.svg" class="arrow">
+            </button>
+          </form>
+        </div>
+
         <div class="featured__card">
-          <div class="featured__overlay"></div>
+          <div class="featured__overlay featured__overlay-tablet">
+          </div>
 
           <img src="assets/portfolio/mobile/image-del-sol.jpg" class="featured__image" alt="">
+          <img src="assets/portfolio/tablet/image-del-sol.jpg" class="featured__image-tablet" alt="">
+
           <div class="featured__textbox">
+            <h1 class="featured__h1">1</h1>
             <h4> Project Del Sol</h4>
             <p>View All Projects</p>
           </div>
         </div>
         <div class="featured__card">
-          <div class="featured__overlay"></div>
+          <div class="featured__overlay featured__overlay-tablet"></div>
 
           <img src="assets/portfolio/mobile/image-228b.jpg" class="featured__image" alt="">
+          <img src="assets/portfolio/tablet/image-228b.jpg" class="featured__image-tablet" alt="">
+
           <div class="featured__textbox">
+            <h1>2</h1>
+
             <h4> 228B Tower</h4>
             <p>View All Projects</p>
-
           </div>
         </div>
         <div class="featured__card">
-          <div class="featured__overlay"></div>
+          <div class="featured__overlay featured__overlay-tablet"></div>
 
           <img src="assets/portfolio/mobile/image-prototype.jpg" class="featured__image" alt="">
+          <img src="assets/portfolio/tablet/image-prototype.jpg" class="featured__image-tablet" alt="">
+
           <div class="featured__textbox">
+            <h1>3</h1>
             <h4> Le Prototype</h4>
             <p> View All Projects</p>
+            <img src="" alt="">
 
           </div>
         </div>
         <form method="get" action="/SRC/Pages/portfolio.html">
-          <button type="submit" class="featured__btn btn">See all <img src="/assets/icons/icon-arrow.svg" class="arrow">
+          <button type="submit" class="featured__btn btn mobile">See all <img src="/assets/icons/icon-arrow.svg"
+              class="arrow">
           </button>
         </form>
       </div>
@@ -137,35 +159,32 @@
   </section>
 
   <section>
-    <div class="container">
-      <div class="footer">
-        <div class="footer__image-div">
-          <img src="/assets/logo - white.svg" alt="">
-        </div>
-        <div>
-          <ul class="footer__list">
-            <li class="">
-              <a class="footer__links " href="/src/Pages/portfolio.html"> Portfolio
-              </a>
-            </li>
-            <li>
-              <a class="footer__links" href="/src/Pages/about.html"> About Us
-              </a>
-            </li>
-            <li>
-              <a class="footer__links" href="/src/Pages/contact.html"> Contact
-              </a>
-            </li>
-          </ul>
-          <form method="get" action="/SRC/Pages/portfolio.html">
-            <button type="submit" class="footer__btn btn"> See Our Portfolio <img src="/assets/icons/icon-arrow.svg"
-                class="arrow">
-            </button>
-          </form>
-        </div>
-
+    <div class="footer">
+      <div class="footer__image-div">
+        <img src="/assets/logo - white.svg" alt="">
       </div>
+      <ul class="footer__list">
+        <li class="">
+          <a class="footer__links " href="/src/Pages/portfolio.html"> Portfolio
+          </a>
+        </li>
+        <li>
+          <a class="footer__links" href="/src/Pages/about.html"> About Us
+          </a>
+        </li>
+        <li>
+          <a class="footer__links" href="/src/Pages/contact.html"> Contact
+          </a>
+        </li>
+      </ul>
+
+      <form method="get" action="/SRC/Pages/portfolio.html">
+        <button type="submit" class="footer__btn btn"> See Our Portfolio <img src="/assets/icons/icon-arrow.svg"
+            class="arrow">
+        </button>
+      </form>
     </div>
+
   </section>
 
 
