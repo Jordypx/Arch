@@ -195,8 +195,7 @@ nav ul li:last-child {
 }
 
 .welcome__textbox {
-  width: 311px;
-  margin: 0 auto;
+  padding: 0px 32px;
 }
 
 .welcome__textbox h2 {
@@ -286,19 +285,6 @@ nav ul li:last-child {
   left: 24px;
 }
 
-.featured__textbox h1 {
-  position: absolute;
-  left: 375px;
-  font-size: 200px;
-  line-height: 200px;
-  bottom: -10px;
-  text-align: right;
-  letter-spacing: -5px;
-  color: white;
-  mix-blend-mode: normal;
-  opacity: 0.5;
-}
-
 .featured__overlay {
   opacity: 0.4;
   background-color: black;
@@ -320,8 +306,12 @@ nav ul li:last-child {
   display: none;
 }
 
+.work2 {
+  position: relative;
+}
+
 .featured__h1 {
-  left: 425px !important;
+  display: none;
 }
 
 .footer {
@@ -370,6 +360,78 @@ nav ul li:last-child {
 
 .footer .footer__list {
   padding-top: 92px;
+}
+
+@media screen and (min-width: 560px) {
+  .mobile {
+    display: none;
+  }
+  .featured__h1 {
+    display: inline;
+    position: absolute;
+    font-size: 200px;
+    line-height: 200px;
+    bottom: 35px;
+    text-align: right;
+    letter-spacing: -5px;
+    color: white;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    width: 84px;
+    right: 70px;
+  }
+  .tablet {
+    display: inline;
+  }
+  .featured {
+    margin: unset;
+    padding: 0px 32px;
+    width: unset;
+    margin-bottom: 103px;
+  }
+  .featured h2 {
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2px;
+  }
+  .featured__textbox {
+    left: 40px;
+  }
+  .featured__tablet {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 85px;
+  }
+  .featured__btn-header {
+    width: 169px;
+    height: 72px;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+  }
+  .featured__overlay {
+    display: none;
+  }
+  .featured__image {
+    display: none;
+  }
+  .featured__overlay-tablet {
+    display: inline;
+    width: 100%;
+    height: 240px;
+    opacity: 0.4;
+    background-color: black;
+    position: absolute;
+  }
+  .featured__image-tablet {
+    display: inline-block;
+    margin-bottom: 24px;
+    width: 100%;
+    height: 240px;
+  }
+  .featured__card {
+    background: unset;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -438,6 +500,7 @@ nav ul li:last-child {
   }
   .welcome__textbox {
     width: unset;
+    padding: 0px 96px;
   }
   .welcome__textbox h2 {
     color: #1b1d23;
@@ -457,6 +520,8 @@ nav ul li:last-child {
     margin-bottom: 200px;
   }
   .about-us {
+    width: 80%;
+    margin: 0 auto;
     margin-bottom: 200px;
   }
   .about-us__textbox {
@@ -468,52 +533,19 @@ nav ul li:last-child {
     line-height: 56px;
     letter-spacing: -2px;
   }
+  .about-us__image-div {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/assets/home/tablet/image-small-team.jpg);
+  }
+  .about-us .about-us__image {
+    display: none;
+  }
   .featured {
     margin: unset;
-    padding: unset;
-    width: unset;
+    padding: 0px px;
+    width: 100%;
     margin-bottom: 200px;
-  }
-  .featured h2 {
-    font-size: 56px;
-    line-height: 56px;
-    letter-spacing: -2px;
-  }
-  .featured__textbox {
-    left: 40px;
-  }
-  .featured__tablet {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 85px;
-  }
-  .featured__btn-header {
-    width: 169px;
-    height: 72px;
-    padding: 0px;
-    margin: 0px;
-    text-align: center;
-  }
-  .featured__overlay {
-    display: none;
-  }
-  .featured__image {
-    display: none;
-  }
-  .featured__overlay-tablet {
-    display: inline;
-    width: 573px;
-    height: 240px;
-    opacity: 0.4;
-    background-color: black;
-    position: absolute;
-  }
-  .featured__image-tablet {
-    display: inline-block;
-    margin-bottom: 24px;
-  }
-  .featured__card {
-    background: unset;
   }
   .footer {
     height: 120px;

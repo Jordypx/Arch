@@ -1,9 +1,9 @@
 @import "variables";
 @import "globals";
-@import "nav";
-@import "hero";
-@import "welcome";
-@import "about-us";
-@import "featured";
-@import "footer";
+@import "./Layout/nav";
+@import "./Layout/hero";
+@import "./Layout/welcome";
+@import "./Layout/about-us";
+@import "./Layout/featured";
+@import "./Layout/footer";
 @import "breakpoints";

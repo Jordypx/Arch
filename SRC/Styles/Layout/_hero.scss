@@ -1,0 +1,43 @@
+.hero {
+    height: 560px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 140px;
+    background: rgba(0, 0, 0, 0.5);
+
+    &__textbox {
+        height: 340px;
+        margin: 110px 32px;
+        h1 {
+            margin-bottom: 15px;
+        }
+        p {
+            margin-bottom: 57px;
+        }
+    }
+}
+
+.hero__image-div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.hero__image {
+    width: 100%;
+    height: 100%;
+}
+
+.arrow {
+    position: relative;
+    top: 5px;
+    left: 10px;
+}
+
+.hero__image-tablet {
+    display: none;
+}

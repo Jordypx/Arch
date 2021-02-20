@@ -1,3 +1,78 @@
+@media screen and (min-width: 560px) {
+    .mobile {
+        display: none;
+    }
+    .featured__h1 {
+        display: inline;
+
+        position: absolute;
+        font-size: 200px;
+        line-height: 200px;
+        bottom: 35px;
+        text-align: right;
+        letter-spacing: -5px;
+        color: $white;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+        width: 84px;
+        right: 70px;
+    }
+
+    .tablet {
+        display: inline;
+    }
+    .featured {
+        margin: unset;
+        padding: 0px 32px;
+        width: unset;
+        margin-bottom: 103px;
+        h2 {
+            font-size: $font-upper-med;
+            line-height: $font-upper-med;
+            letter-spacing: -2px;
+        }
+        &__textbox {
+            left: 40px;
+        }
+    }
+    .featured__tablet {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 85px;
+    }
+    .featured__btn-header {
+        width: 169px;
+        height: 72px;
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+    }
+
+    .featured__overlay {
+        display: none;
+    }
+    .featured__image {
+        display: none;
+    }
+    .featured__overlay-tablet {
+        display: inline;
+        width: 100%;
+        height: 240px;
+        opacity: 0.4;
+        background-color: black;
+        position: absolute;
+    }
+    .featured__image-tablet {
+        display: inline-block;
+        margin-bottom: 24px;
+        width: 100%;
+        height: 240px;
+    }
+    .featured__card {
+        background: unset;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .container {
         width: 573px;
@@ -67,6 +142,7 @@
     }
     .welcome__textbox {
         width: unset;
+        padding: 0px 96px;
         h2 {
             color: $black;
             margin-bottom: 56px;
@@ -86,7 +162,10 @@
         }
     }
     .about-us {
+        width: 80%;
+        margin: 0 auto;
         margin-bottom: 200px;
+
         &__textbox {
             height: 224px;
             margin: 168px 58px;
@@ -96,54 +175,20 @@
                 letter-spacing: -2px;
             }
         }
+        &__image-div {
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-image: url(/assets/home/tablet/image-small-team.jpg);
+        }
+        .about-us__image {
+            display: none;
+        }
     }
     .featured {
         margin: unset;
-        padding: unset;
-        width: unset;
+        padding: 0px px;
+        width: 100%;
         margin-bottom: 200px;
-        h2 {
-            font-size: $font-upper-med;
-            line-height: $font-upper-med;
-            letter-spacing: -2px;
-        }
-        &__textbox {
-            left: 40px;
-        }
-    }
-    .featured__tablet {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 85px;
-    }
-    .featured__btn-header {
-        width: 169px;
-        height: 72px;
-        padding: 0px;
-        margin: 0px;
-        text-align: center;
-    }
-
-    .featured__overlay {
-        display: none;
-    }
-    .featured__image {
-        display: none;
-    }
-    .featured__overlay-tablet {
-        display: inline;
-        width: 573px;
-        height: 240px;
-        opacity: 0.4;
-        background-color: black;
-        position: absolute;
-    }
-    .featured__image-tablet {
-        display: inline-block;
-        margin-bottom: 24px;
-    }
-    .featured__card {
-        background: unset;
     }
     .footer {
         height: 120px;
@@ -189,4 +234,7 @@
             }
         }
     }
+}
+
+@media screen and (min-width: 1200px) {
 }
