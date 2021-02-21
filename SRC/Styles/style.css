@@ -62,6 +62,10 @@ p {
   display: none;
 }
 
+.desktop {
+  display: none;
+}
+
 nav {
   height: 96px;
   display: flex;
@@ -170,6 +174,13 @@ nav ul li:last-child {
   margin-bottom: 100px;
 }
 
+.hero__textbox .hero__btn {
+  width: 252px;
+  height: 72px;
+  padding: 0px;
+  text-align: center;
+}
+
 .hero__image-div {
   position: absolute;
   top: 0;
@@ -243,7 +254,7 @@ nav ul li:last-child {
   margin-bottom: 32px;
 }
 
-.about-us__textbox .hero__btn {
+.about-us__textbox .about-us__btn {
   width: 187px;
   height: 72px;
   padding: 0px;
@@ -455,6 +466,9 @@ nav ul li:last-child {
   .container {
     width: 1110px;
     margin: 0 auto;
+  }
+  .desktop {
+    display: none;
   }
   .logo {
     margin-right: 46px;
@@ -672,6 +686,9 @@ nav ul li:last-child {
     margin: 0 auto;
     max-width: 1110px;
   }
+  .desktop {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -687,6 +704,21 @@ nav ul li:last-child {
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .hero__textbox {
+    position: absolute;
+    margin: 185px 190px;
+    width: 544px;
+    height: 361px;
+  }
+  .hero__textbox h1 {
+    margin-bottom: 10px;
+  }
+  .desktop {
+    display: inline;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -78,6 +78,9 @@
         width: 1110px;
         margin: 0 auto;
     }
+    .desktop {
+        display: none;
+    }
     .logo {
         margin-right: 46px;
     }
@@ -303,6 +306,9 @@
             }
         }
     }
+    .desktop {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 1280px) {
@@ -318,5 +324,22 @@
         max-width: 1440px;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .hero {
+        &__textbox {
+            position: absolute;
+            margin: 185px 190px;
+            width: 544px;
+            height: 361px;
+            h1 {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .desktop {
+        display: inline;
     }
 }
