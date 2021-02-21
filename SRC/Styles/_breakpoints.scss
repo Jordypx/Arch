@@ -75,8 +75,11 @@
 
 @media screen and (min-width: 768px) {
     .container {
-        width: 573px;
+        width: 1110px;
         margin: 0 auto;
+    }
+    .logo {
+        margin-right: 46px;
     }
     .tablet {
         display: inline;
@@ -91,12 +94,48 @@
             display: none;
             &-tablet {
                 display: inline;
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+            &-desktop {
+                display: none;
+            }
+            &-div {
+                width: 75%;
+                margin: 0 auto;
             }
         }
-
+        &__line {
+            width: 165px;
+            height: 0.1px;
+            background-color: $light-grey;
+            margin-right: 47px;
+            &-text {
+                color: $light-grey;
+                font-family: Spartan;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 25px;
+                letter-spacing: 15px;
+            }
+        }
+        &__hangdown {
+            display: inline;
+            top: -60px;
+            left: -23px;
+            display: flex;
+            position: absolute;
+            align-items: center;
+            transform-origin: left bottom;
+            transform: translateY(-100%) translateX(3.9rem) rotate(90deg);
+        }
         &__textbox {
+            width: 457px;
             height: 361px;
             margin: 180px 58px;
+            padding: 0px;
             h1 {
                 font-size: $font-lg;
                 line-height: $font-lg;
@@ -133,13 +172,14 @@
     nav {
         height: unset;
         padding-bottom: 15px;
+        justify-content: flex-start;
+        width: 85%;
+        margin: 0 auto;
     }
     .logo {
         margin-top: 56px;
     }
-    .container {
-        width: 572px;
-    }
+
     .welcome__textbox {
         width: unset;
         padding: 0px 96px;
@@ -236,5 +276,36 @@
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
+    nav {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1110px;
+        padding-left: 100px;
+    }
+    .hero {
+        &__image {
+            display: none;
+            &-tablet {
+                display: none;
+            }
+            &-desktop {
+                display: inline;
+                width: 100%;
+                height: 100%;
+                max-width: 1110px;
+            }
+            &-div {
+                width: 80%;
+                margin: 0 auto;
+                max-width: 1110px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    nav {
+        padding-left: 0px;
+    }
 }
