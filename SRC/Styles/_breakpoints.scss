@@ -107,10 +107,12 @@
             }
         }
         &__line {
-            width: 165px;
-            height: 0.1px;
+            width: 105px;
+            height: 0.09px;
             background-color: $light-grey;
             margin-right: 47px;
+
+            color: black;
             &-text {
                 color: $light-grey;
                 font-family: Spartan;
@@ -122,14 +124,14 @@
             }
         }
         &__hangdown {
-            display: inline;
-            top: -60px;
-            left: -23px;
+            top: 0;
+            left: 0px;
             display: flex;
             position: absolute;
             align-items: center;
+            flex-flow: row nowrap;
             transform-origin: left bottom;
-            transform: translateY(-100%) translateX(3.9rem) rotate(90deg);
+            transform: translateY(-100%) translateX(1.9rem) rotate(90deg);
         }
         &__textbox {
             width: 457px;
@@ -153,7 +155,6 @@
 
     .menu {
         display: flex;
-        margin-right: 3.95px;
         li {
             margin-top: 64px;
             padding: 0;
@@ -307,5 +308,15 @@
 @media screen and (min-width: 1280px) {
     nav {
         padding-left: 0px;
+    }
+    .hero__hangdown {
+        margin-left: 2px;
+        transform: translateY(-100%) translateX(3.9rem) rotate(90deg);
+    }
+    .box {
+        position: relative;
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
