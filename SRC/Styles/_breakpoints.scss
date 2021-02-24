@@ -354,7 +354,38 @@
         }
     }
     .desktop {
-        display: none;
+        display: inline;
+    }
+    .welcome {
+        position: relative;
+        margin-top: 108px;
+        &__textbox {
+            width: 1110px;
+            padding: 0px;
+            margin: 0px auto;
+
+            h1 {
+                position: absolute;
+                font-size: 200px;
+                line-height: 200px;
+                letter-spacing: -5px;
+                z-index: 1;
+            }
+            h2 {
+                padding-top: 167px;
+                padding-left: 188px;
+            }
+            P {
+                width: 446px;
+                margin-left: 188px;
+            }
+        }
+        &__image {
+            position: absolute;
+            top: 100px;
+            right: 165px;
+            z-index: -1;
+        }
     }
 }
 
@@ -380,6 +411,12 @@
             width: 544px;
             height: 361px;
             padding: 180px 190px;
+            h1 {
+                margin-bottom: 10px;
+            }
+            p {
+                margin-bottom: 40px;
+            }
         }
     }
     .desktop {
@@ -390,13 +427,5 @@
 @media screen and (min-width: 1400px) {
     .hero {
         max-width: 1440px;
-        &__textbox {
-            h1 {
-                margin-bottom: 10px;
-            }
-            p {
-                margin-bottom: 40px;
-            }
-        }
     }
 }
