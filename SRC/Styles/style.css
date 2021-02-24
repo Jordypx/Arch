@@ -535,7 +535,7 @@ nav ul li:last-child {
   .hero__textbox {
     width: 457px;
     height: 361px;
-    padding: 180px 58px;
+    padding: 184px 58px;
   }
   .hero__textbox h1 {
     font-size: 80px;
@@ -755,7 +755,7 @@ nav ul li:last-child {
   .welcome__textbox h2 {
     padding-top: 167px;
     padding-left: 188px;
-    color: #1b1d23;
+    color: #60636c;
   }
   .welcome__textbox P {
     width: 446px;
@@ -763,7 +763,7 @@ nav ul li:last-child {
   }
   .welcome__image {
     position: absolute;
-    top: 100px;
+    top: 88px;
     z-index: -1;
     right: 0px;
   }
@@ -789,7 +789,7 @@ nav ul li:last-child {
   .hero__textbox {
     width: 544px;
     height: 361px;
-    padding: 180px 190px;
+    padding: 184px 190px;
   }
   .hero__textbox h1 {
     margin-bottom: 10px;
