@@ -45,11 +45,15 @@
     display: none;
 }
 
-// .hero__overlay {
-//     opacity: 0.4;
-//     background-color: black;
-//     object-fit: cover;
-//     position: absolute;
-//     width: 100%;
-//     height: 100%;
-// }
+.hero__overlay {
+    opacity: 0.4;
+    background-color: black;
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.hero__slide {
+    display: none;
+}

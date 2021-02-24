@@ -204,6 +204,19 @@ nav ul li:last-child {
   display: none;
 }
 
+.hero__overlay {
+  opacity: 0.4;
+  background-color: black;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.hero__slide {
+  display: none;
+}
+
 .welcome {
   margin-bottom: 80px;
 }
@@ -446,6 +459,9 @@ nav ul li:last-child {
   .featured__card {
     background: unset;
   }
+  .hero__slide {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -464,6 +480,9 @@ nav ul li:last-child {
   }
   .mobile {
     display: none;
+  }
+  .hero__overlay {
+    width: 75%;
   }
   .hero {
     height: 720px;
@@ -516,7 +535,7 @@ nav ul li:last-child {
   .hero__textbox {
     width: 457px;
     height: 361px;
-    padding: 0px;
+    padding: 180px 58px;
   }
   .hero__textbox h1 {
     font-size: 80px;
@@ -525,6 +544,7 @@ nav ul li:last-child {
   }
   .hero__textbox p {
     margin-bottom: 57px;
+    width: 457px;
   }
   .hamburger__button {
     display: none;
@@ -647,6 +667,9 @@ nav ul li:last-child {
     margin: 0 auto;
     margin-right: 56px;
   }
+  .hero__slide {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -657,12 +680,10 @@ nav ul li:last-child {
     padding-left: 100px;
   }
   .hero__slide {
-    width: 320px;
-    height: 80px;
     display: flex;
     position: absolute;
     bottom: 0px;
-    left: 30px;
+    left: -80px;
     background-color: white;
   }
   .hero__slide .hero__button {
@@ -679,17 +700,17 @@ nav ul li:last-child {
     position: relative;
   }
   .hero__slide .hero__button:hover {
-    background-color: red;
+    background-color: #c9cdd9;
   }
   .hero__slide .active {
     color: white;
     background-color: #1b1d23;
   }
+  .hero__overlay {
+    width: 100%;
+  }
   .desktop {
     display: none;
-  }
-  .hero {
-    position: relative;
   }
   .hero__image {
     display: none;
@@ -708,6 +729,7 @@ nav ul li:last-child {
     margin: 0 auto;
     max-width: 1110px;
     height: 720px;
+    position: relative;
   }
   .desktop {
     display: none;
@@ -730,18 +752,26 @@ nav ul li:last-child {
   }
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1366px) {
   .hero__textbox {
-    position: absolute;
-    margin: 185px 190px;
     width: 544px;
     height: 361px;
+    padding: 180px 190px;
+  }
+  .desktop {
+    display: inline;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .hero {
+    max-width: 1440px;
   }
   .hero__textbox h1 {
     margin-bottom: 10px;
   }
-  .desktop {
-    display: inline;
+  .hero__textbox p {
+    margin-bottom: 40px;
   }
 }
 /*# sourceMappingURL=style.css.map */
