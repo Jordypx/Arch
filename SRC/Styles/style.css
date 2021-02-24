@@ -181,15 +181,6 @@ nav ul li:last-child {
   text-align: center;
 }
 
-.hero__image-div {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: -1;
-}
-
 .hero__image {
   width: 100%;
   height: 100%;
@@ -197,6 +188,10 @@ nav ul li:last-child {
 
 .hero__image-desktop {
   display: none;
+}
+
+.hero__image-div {
+  height: 560px;
 }
 
 .arrow {
@@ -207,15 +202,6 @@ nav ul li:last-child {
 
 .hero__image-tablet {
   display: none;
-}
-
-.hero__overlay {
-  opacity: 0.4;
-  background-color: black;
-  object-fit: cover;
-  position: absolute;
-  width: 100%;
-  height: 100%;
 }
 
 .welcome {
@@ -482,6 +468,7 @@ nav ul li:last-child {
   .hero {
     height: 720px;
     margin-bottom: 74px;
+    height: 720px;
   }
   .hero__image {
     display: none;
@@ -498,6 +485,7 @@ nav ul li:last-child {
   .hero__image-div {
     width: 75%;
     margin: 0 auto;
+    height: 720px;
   }
   .hero__line {
     width: 105px;
@@ -528,7 +516,6 @@ nav ul li:last-child {
   .hero__textbox {
     width: 457px;
     height: 361px;
-    margin: 180px 58px;
     padding: 0px;
   }
   .hero__textbox h1 {
@@ -669,6 +656,41 @@ nav ul li:last-child {
     max-width: 1110px;
     padding-left: 100px;
   }
+  .hero__slide {
+    width: 320px;
+    height: 80px;
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    left: 30px;
+    background-color: white;
+  }
+  .hero__slide .hero__button {
+    width: 80px;
+    height: 80px;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    border: 0px;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 25px;
+    color: #60636c;
+    position: relative;
+  }
+  .hero__slide .hero__button:hover {
+    background-color: red;
+  }
+  .hero__slide .active {
+    color: white;
+    background-color: #1b1d23;
+  }
+  .desktop {
+    display: none;
+  }
+  .hero {
+    position: relative;
+  }
   .hero__image {
     display: none;
   }
@@ -678,13 +700,14 @@ nav ul li:last-child {
   .hero__image-desktop {
     display: inline;
     width: 100%;
-    height: 100%;
     max-width: 1110px;
+    height: 720px;
   }
   .hero__image-div {
     width: 80%;
     margin: 0 auto;
     max-width: 1110px;
+    height: 720px;
   }
   .desktop {
     display: none;
