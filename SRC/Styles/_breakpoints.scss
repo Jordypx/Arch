@@ -74,6 +74,9 @@
     .hero__slide {
         display: none;
     }
+    .about-us__image-tablet {
+        display: none;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -147,7 +150,7 @@
         &__textbox {
             width: 457px;
             height: 361px;
-            padding: 184px 58px;
+            padding: 185px 58px;
             h1 {
                 font-size: $font-lg;
                 line-height: $font-lg;
@@ -235,12 +238,18 @@
         .about-us__image {
             display: none;
         }
+        .about-us__image-tablet {
+            display: none;
+        }
     }
     .featured {
-        margin: unset;
-        padding: 0px px;
-        width: 100%;
+        margin: 0 auto;
+        padding: 0px 0px;
+        width: 80%;
         margin-bottom: 200px;
+        .featured__image-desktop {
+            display: none;
+        }
     }
     .footer {
         height: 120px;
@@ -391,6 +400,59 @@
             right: 0px;
         }
     }
+    .about-us {
+        max-width: 1100px;
+        &__textbox {
+            margin: 168px 190px;
+        }
+    }
+    .about-us .about-us__image-tablet {
+        display: inline;
+        width: 100%;
+        height: 100%;
+    }
+    .about-us__image {
+        display: none;
+    }
+    .about-us__image-div {
+        background: none;
+    }
+    .featured {
+        width: 94%;
+        max-width: 1100px;
+        margin: 0 auto;
+        .featured__image-tablet {
+            display: none;
+        }
+        .featured__image-desktop {
+            display: inline;
+            width: 100%;
+            height: 560px;
+        }
+        .featured__card {
+            max-width: 350px;
+            margin-right: 30px;
+        }
+        .featured__card:nth-child(3) {
+            margin-right: 0px;
+        }
+        .featured__overlay-tablet {
+            display: inline;
+            width: 100%;
+            height: 100%;
+            opacity: 0.4;
+            background-color: black;
+            position: absolute;
+        }
+        .featured__tablet {
+            margin-bottom: 32px;
+        }
+        .featured__flex {
+            display: flex;
+            flex-flow: row nowrap;
+            width: 100%;
+        }
+    }
 }
 
 @media screen and (min-width: 1280px) {
@@ -414,7 +476,7 @@
         &__textbox {
             width: 544px;
             height: 361px;
-            padding: 184px 190px;
+            padding: 185px 190px;
             h1 {
                 margin-bottom: 10px;
             }

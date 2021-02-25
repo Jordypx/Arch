@@ -462,6 +462,9 @@ nav ul li:last-child {
   .hero__slide {
     display: none;
   }
+  .about-us__image-tablet {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -535,7 +538,7 @@ nav ul li:last-child {
   .hero__textbox {
     width: 457px;
     height: 361px;
-    padding: 184px 58px;
+    padding: 185px 58px;
   }
   .hero__textbox h1 {
     font-size: 80px;
@@ -619,11 +622,17 @@ nav ul li:last-child {
   .about-us .about-us__image {
     display: none;
   }
+  .about-us .about-us__image-tablet {
+    display: none;
+  }
   .featured {
-    margin: unset;
-    padding: 0px px;
-    width: 100%;
+    margin: 0 auto;
+    padding: 0px 0px;
+    width: 80%;
     margin-bottom: 200px;
+  }
+  .featured .featured__image-desktop {
+    display: none;
   }
   .footer {
     height: 120px;
@@ -767,6 +776,59 @@ nav ul li:last-child {
     z-index: -1;
     right: 0px;
   }
+  .about-us {
+    max-width: 1100px;
+  }
+  .about-us__textbox {
+    margin: 168px 190px;
+  }
+  .about-us .about-us__image-tablet {
+    display: inline;
+    width: 100%;
+    height: 100%;
+  }
+  .about-us__image {
+    display: none;
+  }
+  .about-us__image-div {
+    background: none;
+  }
+  .featured {
+    width: 94%;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .featured .featured__image-tablet {
+    display: none;
+  }
+  .featured .featured__image-desktop {
+    display: inline;
+    width: 100%;
+    height: 560px;
+  }
+  .featured .featured__card {
+    max-width: 350px;
+    margin-right: 30px;
+  }
+  .featured .featured__card:nth-child(3) {
+    margin-right: 0px;
+  }
+  .featured .featured__overlay-tablet {
+    display: inline;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    background-color: black;
+    position: absolute;
+  }
+  .featured .featured__tablet {
+    margin-bottom: 32px;
+  }
+  .featured .featured__flex {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -789,7 +851,7 @@ nav ul li:last-child {
   .hero__textbox {
     width: 544px;
     height: 361px;
-    padding: 184px 190px;
+    padding: 185px 190px;
   }
   .hero__textbox h1 {
     margin-bottom: 10px;
