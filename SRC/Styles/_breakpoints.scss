@@ -213,13 +213,13 @@
         }
         p {
             color: $black;
-            margin-bottom: 163px;
+            margin-bottom: 164px;
         }
     }
     .about-us {
         width: 80%;
         margin: 0 auto;
-        margin-bottom: 200px;
+        margin-bottom: 205px;
 
         &__textbox {
             height: 224px;
@@ -445,7 +445,8 @@
             position: absolute;
         }
         .featured__tablet {
-            margin-bottom: 32px;
+            margin-bottom: 27px;
+            margin-top: 5px;
         }
         .featured__flex {
             display: flex;
