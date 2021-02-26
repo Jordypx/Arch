@@ -598,12 +598,12 @@ nav ul li:last-child {
   }
   .welcome__textbox p {
     color: #1b1d23;
-    margin-bottom: 164px;
+    margin-bottom: 165px;
   }
   .about-us {
     width: 80%;
     margin: 0 auto;
-    margin-bottom: 205px;
+    margin-bottom: 213px;
   }
   .about-us__textbox {
     height: 224px;
@@ -822,7 +822,7 @@ nav ul li:last-child {
     position: absolute;
   }
   .featured .featured__tablet {
-    margin-bottom: 27px;
+    margin-bottom: 20px;
     margin-top: 5px;
   }
   .featured .featured__flex {
