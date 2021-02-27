@@ -558,7 +558,6 @@ nav ul li:last-child {
   .menu li {
     margin-top: 64px;
     padding: 0;
-    margin-right: 8px;
   }
   .menu li a {
     font-size: 15px;
@@ -598,7 +597,7 @@ nav ul li:last-child {
   }
   .welcome__textbox p {
     color: #1b1d23;
-    margin-bottom: 165px;
+    margin-bottom: 166px;
   }
   .about-us {
     width: 80%;
@@ -674,7 +673,10 @@ nav ul li:last-child {
   }
   .footer ul li {
     margin: 0 auto;
-    margin-right: 56px;
+    margin-right: 48px;
+  }
+  .footer .footer__links-first {
+    margin-right: 8px;
   }
   .hero__slide {
     display: none;
@@ -816,10 +818,10 @@ nav ul li:last-child {
   }
   .featured__overlay-tablet {
     height: 99%;
-    opacity: 0.3;
+    opacity: 0.2;
   }
   .featured__tablet {
-    margin-bottom: 21px;
+    margin-bottom: 22px;
     margin-top: 5px;
   }
   .featured__flex {

@@ -171,7 +171,6 @@
         li {
             margin-top: 64px;
             padding: 0;
-            margin-right: 8px;
             a {
                 font-size: $font-xsm;
                 line-height: 25px;
@@ -212,7 +211,7 @@
         }
         p {
             color: $black;
-            margin-bottom: 165px;
+            margin-bottom: 166px;
         }
     }
     .about-us {
@@ -290,8 +289,11 @@
         ul {
             li {
                 margin: 0 auto;
-                margin-right: 56px;
+                margin-right: 48px;
             }
+        }
+        .footer__links-first {
+            margin-right: 8px;
         }
     }
     .hero__slide {
@@ -438,10 +440,10 @@
         }
         &__overlay-tablet {
             height: 99%;
-            opacity: 0.3;
+            opacity: 0.2;
         }
         &__tablet {
-            margin-bottom: 21px;
+            margin-bottom: 22px;
             margin-top: 5px;
         }
         &__flex {
