@@ -441,7 +441,7 @@
             opacity: 0.3;
         }
         &__tablet {
-            margin-bottom: 20px;
+            margin-bottom: 21px;
             margin-top: 5px;
         }
         &__flex {
@@ -461,6 +461,9 @@
         bottom: 318px;
         right: -17px;
     }
+    .featured__h1-3 {
+        right: 32px;
+    }
     .footer {
         height: 200px;
         max-width: 1110px;
@@ -477,7 +480,7 @@
             z-index: 2;
         }
         &__list {
-            margin-left: 85px;
+            margin-left: 45px;
         }
     }
     .footer::before {

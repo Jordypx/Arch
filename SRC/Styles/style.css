@@ -819,7 +819,7 @@ nav ul li:last-child {
     opacity: 0.3;
   }
   .featured__tablet {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
     margin-top: 5px;
   }
   .featured__flex {
@@ -838,6 +838,9 @@ nav ul li:last-child {
     bottom: 318px;
     right: -17px;
   }
+  .featured__h1-3 {
+    right: 32px;
+  }
   .footer {
     height: 200px;
     max-width: 1110px;
@@ -854,7 +857,7 @@ nav ul li:last-child {
     z-index: 2;
   }
   .footer__list {
-    margin-left: 85px;
+    margin-left: 45px;
   }
   .footer::before {
     content: "";
