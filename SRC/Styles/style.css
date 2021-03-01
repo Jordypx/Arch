@@ -66,6 +66,11 @@ p {
   display: none;
 }
 
+.rel {
+  position: absolute;
+  top: 0px;
+}
+
 nav {
   height: 96px;
   display: flex;
@@ -215,6 +220,121 @@ nav ul li:last-child {
 
 .hero__slide {
   display: none;
+}
+
+.slider {
+  overflow: hidden;
+  width: 100%;
+}
+
+.slides {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 100%;
+  transition: 1s;
+  position: relative;
+}
+
+/*css for manual slide navigation*/
+.navigation-manual {
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+  left: -80px;
+  background-color: white;
+}
+
+.navigation-manual label {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.manual-btn {
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: 1s;
+  background: transparent;
+  outline: none;
+  border: 0px;
+  color: #60636c;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 25px;
+  color: #60636c;
+  text-align: center;
+  position: relative;
+}
+
+.manual-btn:hover {
+  background: #c9cdd9;
+}
+
+#radio1:checked ~ .first {
+  margin-left: -0%;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -100%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -200%;
+}
+
+#radio4:checked ~ .first {
+  margin-left: -300%;
+}
+
+/*css for automatic navigation*/
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.navigation-auto div {
+  border: 2px solid #40d3dc;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background: #40d3dc;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background: #40d3dc;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background: #40d3dc;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+  background: #40d3dc;
+}
+
+.hero__textbox {
+  position: absolute;
+  overflow: h;
 }
 
 .welcome {
@@ -894,8 +1014,10 @@ nav ul li:last-child {
 @media screen and (min-width: 1366px) {
   .hero__textbox {
     width: 544px;
-    height: 361px;
+    height: unset;
     padding: 185px 190px;
+    position: relative;
+    overflow: hidden;
   }
   .hero__textbox h1 {
     margin-bottom: 10px;

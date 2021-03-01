@@ -518,8 +518,11 @@
     .hero {
         &__textbox {
             width: 544px;
-            height: 361px;
+            height: unset;
             padding: 185px 190px;
+            position: relative;
+            overflow: hidden;
+
             h1 {
                 margin-bottom: 10px;
             }
