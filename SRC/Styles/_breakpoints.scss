@@ -517,7 +517,7 @@
 @media screen and (min-width: 1366px) {
     .hero {
         &__textbox {
-            width: 544px;
+            width: unset;
             height: unset;
             padding: 185px 190px;
             position: relative;
