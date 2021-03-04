@@ -96,7 +96,7 @@
         display: none;
     }
     .hero__overlay {
-        width: 75%;
+        width: 100%;
     }
     .hero {
         height: 720px;
@@ -147,9 +147,10 @@
             transform: translateY(-100%) translateX(1.9rem) rotate(90deg);
         }
         &__textbox {
-            width: 457px;
+            width: unset;
             height: 361px;
             padding: 185px 58px;
+            position: absolute;
             h1 {
                 font-size: $font-lg;
                 line-height: $font-lg;
@@ -161,9 +162,37 @@
             }
         }
     }
-
+    .hero__image-tablet {
+        display: inline;
+        height: 100%;
+    }
+    .slide {
+        width: 20%;
+    }
+    .slides {
+        width: 500%;
+    }
+    .slider {
+        height: 720px;
+        width: 100%;
+    }
     .hamburger__button {
         display: none;
+    }
+    #radio1:checked ~ .first {
+        margin-left: -0%;
+    }
+
+    #radio2:checked ~ .first {
+        margin-left: -20%;
+    }
+
+    #radio3:checked ~ .first {
+        margin-left: -40%;
+    }
+
+    #radio4:checked ~ .first {
+        margin-left: -60%;
     }
 
     .menu {
@@ -302,6 +331,30 @@
 }
 
 @media screen and (min-width: 1024px) {
+    .hello {
+        display: inline;
+    }
+    .slides {
+        width: 100%;
+    }
+    .slide {
+        width: 100%;
+    }
+    #radio1:checked ~ .first {
+        margin-left: -0%;
+    }
+
+    #radio2:checked ~ .first {
+        margin-left: -100%;
+    }
+
+    #radio3:checked ~ .first {
+        margin-left: -200%;
+    }
+
+    #radio4:checked ~ .first {
+        margin-left: -300%;
+    }
     nav {
         width: 100%;
         margin: 0 auto;
@@ -348,12 +401,7 @@
             &-tablet {
                 display: none;
             }
-            &-desktop {
-                display: inline;
-                width: 100%;
-                max-width: 1110px;
-                height: 720px;
-            }
+
             &-div {
                 width: 80%;
                 margin: 0 auto;
@@ -362,6 +410,12 @@
                 position: relative;
             }
         }
+    }
+    .hero__image-desktop {
+        display: inline;
+        width: 100%;
+        max-width: 1110px;
+        height: 720px;
     }
     .desktop {
         display: inline;
@@ -496,6 +550,19 @@
         z-index: 1;
         width: 100%;
         left: 88.649%;
+    }
+    .navigation-manual {
+        display: flex;
+        position: absolute;
+        bottom: 0px;
+        left: -80px;
+        background-color: $white;
+        label {
+            justify-content: center;
+
+            display: flex;
+            align-items: center;
+        }
     }
 }
 @media screen and (min-width: 1280px) {
