@@ -232,6 +232,7 @@ nav ul li:last-child {
   display: flex;
   overflow: hidden;
   width: 500%;
+  height: 560px;
 }
 
 .slides input {
@@ -331,6 +332,22 @@ nav ul li:last-child {
 
 .navigation-manual {
   display: none;
+}
+
+#radio1:checked ~ .first {
+  margin-left: -0%;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+  margin-left: -60%;
 }
 
 .welcome {
@@ -678,6 +695,7 @@ nav ul li:last-child {
   }
   .slides {
     width: 500%;
+    height: unset;
   }
   .slider {
     height: 720px;
@@ -685,18 +703,6 @@ nav ul li:last-child {
   }
   .hamburger__button {
     display: none;
-  }
-  #radio1:checked ~ .first {
-    margin-left: -0%;
-  }
-  #radio2:checked ~ .first {
-    margin-left: -20%;
-  }
-  #radio3:checked ~ .first {
-    margin-left: -40%;
-  }
-  #radio4:checked ~ .first {
-    margin-left: -60%;
   }
   .menu {
     display: flex;

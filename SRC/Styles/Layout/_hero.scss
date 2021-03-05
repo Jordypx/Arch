@@ -68,6 +68,7 @@
     display: flex;
     overflow: hidden;
     width: 500%;
+    height: 560px;
 }
 
 .slides input {
@@ -168,4 +169,20 @@
 
 .navigation-manual {
     display: none;
+}
+
+#radio1:checked ~ .first {
+    margin-left: -0%;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -60%;
 }
