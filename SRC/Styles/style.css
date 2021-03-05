@@ -666,6 +666,9 @@ nav ul li:last-child {
     margin-bottom: 57px;
     width: 457px;
   }
+  .hero__textbox-trinity {
+    position: relative;
+  }
   .hero__image-tablet {
     display: inline;
     height: 100%;
