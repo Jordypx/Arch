@@ -522,6 +522,112 @@ nav ul li:last-child {
   padding-top: 92px;
 }
 
+.about-image {
+  width: 100%;
+  height: 240px;
+}
+
+.about-image-div {
+  position: relative;
+}
+
+.about-image-div::before {
+  content: "";
+  width: 90.5%;
+  height: 45px;
+  position: absolute;
+  background: white;
+  z-index: 1;
+  left: 0px;
+  bottom: 0px;
+}
+
+.about__overlay {
+  opacity: 0.4;
+  background-color: black;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 98%;
+}
+
+.about__textbox {
+  margin-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 91.4666%;
+  margin-bottom: 140px;
+}
+
+.about__textbox h2 {
+  color: #1b1d23;
+  margin-bottom: 30px;
+}
+
+.about__textbox p {
+  color: #1b1d23;
+}
+
+.heritage__textbox {
+  margin-top: 35px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 91.4666%;
+  margin-bottom: 72px;
+}
+
+.heritage__textbox h2 {
+  margin-bottom: 30px;
+}
+
+.heritage__textbox p {
+  color: #1b1d23;
+}
+
+.leaders {
+  margin-bottom: 300px;
+}
+
+.leaders__textbox {
+  margin-bottom: 64px;
+}
+
+.leaders__card {
+  display: block;
+  margin: 0 auto;
+  width: 311px;
+}
+
+.leaders__card-image {
+  margin-bottom: 19px;
+}
+
+.leaders__card h3 {
+  margin-bottom: 4px;
+  font-size: 18px;
+  line-height: 25px;
+  color: #1b1d23;
+}
+
+.leaders__card h4 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 25px;
+  color: #1b1d23;
+  mix-blend-mode: normal;
+  opacity: 0.75;
+}
+
+.linkedin {
+  margin-right: 25.6px;
+}
+
+.icons {
+  margin-top: 8px;
+  margin-bottom: 40px;
+}
+
 @media screen and (min-width: 560px) {
   .mobile {
     display: none;
