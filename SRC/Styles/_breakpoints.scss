@@ -17,9 +17,9 @@
         right: 70px;
     }
 
-    .tablet {
-        display: inline;
-    }
+    // .tablet {
+    //     display: inline;
+    // }
     .featured {
         margin: unset;
         padding: 0px 32px;
@@ -316,6 +316,72 @@
     }
     .hero__slide {
         display: none;
+    }
+    .about {
+        padding: 0px 97px;
+        margin: 0 auto;
+        position: relative;
+        width: 100%;
+        height: 720px;
+
+        &-image {
+            display: none;
+            &-div {
+                position: relative;
+            }
+        }
+
+        &__textbox {
+            width: 623px;
+            height: 431px;
+            right: 0;
+            bottom: 0;
+            background-color: $white;
+            position: absolute;
+            margin: 0px;
+            padding-top: 163px;
+            padding-left: 59px;
+
+            h2 {
+                font-weight: bold;
+                font-size: 56px;
+                line-height: 56px;
+                letter-spacing: -2px;
+                color: #1b1d23;
+            }
+            p {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 25px;
+                color: #60636d;
+            }
+        }
+    }
+    .about-image-div::before {
+        display: none;
+    }
+    .about-image-div {
+        background-color: black;
+    }
+    .about-image-desktop {
+        height: 720px;
+        background-image: url(/assets/about/tablet/image-hero.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        width: 100%;
+        opacity: 0.6;
+    }
+    .about__heading {
+        font-size: 120px;
+        line-height: 200px;
+        text-align: right;
+        letter-spacing: -3px;
+        color: #eeeff4;
+        position: absolute;
+        top: -93px;
+        right: 100px;
     }
 }
 

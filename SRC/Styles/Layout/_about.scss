@@ -3,6 +3,9 @@
         width: 100%;
         height: 240px;
     }
+    &-image-desktop-image {
+        display: none;
+    }
     &-image-div {
         position: relative;
     }
@@ -58,9 +61,12 @@
 }
 
 .leaders {
-    margin-bottom: 300px;
+    margin-bottom: 150px;
     &__textbox {
         margin-bottom: 64px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 91.4666%;
     }
     &__card {
         display: block;
@@ -68,6 +74,8 @@
         width: 311px;
         &-image {
             margin-bottom: 19px;
+            width: 311px;
+            height: 284px;
         }
         h3 {
             margin-bottom: 4px;
@@ -93,4 +101,8 @@
 .icons {
     margin-top: 8px;
     margin-bottom: 40px;
+}
+
+.about-image-desktop-img {
+    display: none;
 }

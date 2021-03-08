@@ -527,6 +527,10 @@ nav ul li:last-child {
   height: 240px;
 }
 
+.about-image-desktop-image {
+  display: none;
+}
+
 .about-image-div {
   position: relative;
 }
@@ -585,11 +589,14 @@ nav ul li:last-child {
 }
 
 .leaders {
-  margin-bottom: 300px;
+  margin-bottom: 150px;
 }
 
 .leaders__textbox {
   margin-bottom: 64px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 91.4666%;
 }
 
 .leaders__card {
@@ -600,6 +607,8 @@ nav ul li:last-child {
 
 .leaders__card-image {
   margin-bottom: 19px;
+  width: 311px;
+  height: 284px;
 }
 
 .leaders__card h3 {
@@ -628,6 +637,10 @@ nav ul li:last-child {
   margin-bottom: 40px;
 }
 
+.about-image-desktop-img {
+  display: none;
+}
+
 @media screen and (min-width: 560px) {
   .mobile {
     display: none;
@@ -645,9 +658,6 @@ nav ul li:last-child {
     opacity: 0.5;
     width: 84px;
     right: 70px;
-  }
-  .tablet {
-    display: inline;
   }
   .featured {
     margin: unset;
@@ -938,6 +948,69 @@ nav ul li:last-child {
   }
   .hero__slide {
     display: none;
+  }
+  .about {
+    padding: 0px 97px;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    height: 720px;
+  }
+  .about-image {
+    display: none;
+  }
+  .about-image-div {
+    position: relative;
+  }
+  .about__textbox {
+    width: 623px;
+    height: 431px;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    position: absolute;
+    margin: 0px;
+    padding-top: 163px;
+    padding-left: 59px;
+  }
+  .about__textbox h2 {
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -2px;
+    color: #1b1d23;
+  }
+  .about__textbox p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 25px;
+    color: #60636d;
+  }
+  .about-image-div::before {
+    display: none;
+  }
+  .about-image-div {
+    background-color: black;
+  }
+  .about-image-desktop {
+    height: 720px;
+    background-image: url(/assets/about/tablet/image-hero.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    opacity: 0.6;
+  }
+  .about__heading {
+    font-size: 120px;
+    line-height: 200px;
+    text-align: right;
+    letter-spacing: -3px;
+    color: #eeeff4;
+    position: absolute;
+    top: -93px;
+    right: 100px;
   }
 }
 
