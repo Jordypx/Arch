@@ -955,6 +955,7 @@ nav ul li:last-child {
     position: relative;
     width: 100%;
     height: 720px;
+    margin-bottom: 200px;
   }
   .about-image {
     display: none;
@@ -979,6 +980,7 @@ nav ul li:last-child {
     line-height: 56px;
     letter-spacing: -2px;
     color: #1b1d23;
+    margin-bottom: 53px;
   }
   .about__textbox p {
     font-style: normal;
@@ -1011,6 +1013,74 @@ nav ul li:last-child {
     position: absolute;
     top: -93px;
     right: 100px;
+  }
+  .heritage {
+    padding: 0px 97px;
+    position: relative;
+  }
+  .heritage__textbox {
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+  }
+  .heritage__textbox h2 {
+    font-size: 56px;
+    line-height: 56px;
+    padding-top: 75px;
+    margin-bottom: 56px;
+  }
+  .heritage::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    width: 65px;
+    height: 1px;
+    top: 0px;
+  }
+  .leaders {
+    padding: 0px 97px;
+    margin-bottom: 200px;
+  }
+  .leaders__textbox {
+    margin-left: 0px;
+  }
+  .leaders__textbox h2 {
+    font-size: 56px;
+    line-height: 56px;
+    margin-bottom: 56px;
+    padding-top: 0px;
+  }
+  .leaders__card {
+    display: block;
+    margin: 0 auto;
+    width: 311px;
+  }
+  .leaders__card-image {
+    margin-bottom: 24px;
+    width: 280px;
+    height: 256px;
+  }
+  .grid-container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    column-gap: 11px;
+    max-width: 600px;
+    grid-template-areas: "leaders__card-1 leaders__card-2" "leaders__card-3 leaders__card-4";
+  }
+  .leaders__card-1 {
+    grid-area: leaders__card-1;
+  }
+  .leaders__card-2 {
+    grid-area: leaders__card-2;
+  }
+  .leaders__card-3 {
+    grid-area: leaders__card-3;
+  }
+  .leaders__card-4 {
+    grid-area: leaders__card-4;
   }
 }
 
@@ -1236,6 +1306,12 @@ nav ul li:last-child {
     justify-content: center;
     display: flex;
     align-items: center;
+  }
+  .about {
+    max-width: 1100px;
+  }
+  .about-image-desktop {
+    background-image: url(/assets/about/desktop/image-hero.jpg);
   }
 }
 
