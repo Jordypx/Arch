@@ -641,6 +641,10 @@ nav ul li:last-child {
   display: none;
 }
 
+.heritage__image {
+  display: none;
+}
+
 @media screen and (min-width: 560px) {
   .mobile {
     display: none;
@@ -1313,11 +1317,48 @@ nav ul li:last-child {
   .about-image-desktop {
     background-image: url(/assets/about/desktop/image-hero.jpg);
   }
+  .heritage {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1110px;
+    padding: 0px;
+    margin-bottom: 200px;
+  }
+  .heritage__image {
+    display: inline;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 403px;
+    height: 628px;
+  }
+  .heritage__textbox {
+    width: 446px;
+  }
+  .heritage__textbox p {
+    width: 380px;
+    height: 350px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
   nav {
     padding-left: 0px;
+  }
+  .about {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1110px;
+    padding: 0px;
+    margin-bottom: 200px;
+  }
+  .heritage__image {
+    width: unset;
+  }
+  .heritage__textbox p {
+    width: unset;
+    height: unset;
   }
   .hero__hangdown {
     margin-left: 2px;
