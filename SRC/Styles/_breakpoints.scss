@@ -386,6 +386,15 @@
         width: 100%;
         opacity: 0.6;
     }
+    .contact-image-desktop {
+        height: 720px;
+        background-image: url(/assets/contact/tablet/image-hero.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        width: 100%;
+        opacity: 0.6;
+    }
     .about__heading {
         font-size: 120px;
         line-height: 200px;
@@ -709,9 +718,27 @@
     }
     .about {
         max-width: 1100px;
+        &-image-div {
+            background-color: unset;
+        }
+        &__overlay {
+            opacity: 1;
+            background-color: unset;
+        }
+        &__textbox {
+            height: 503px;
+            width: 715px;
+        }
     }
     .about-image-desktop {
         background-image: url(/assets/about/desktop/image-hero.jpg);
+        background-size: 635px 720px;
+        opacity: 1;
+    }
+    .contact-image-desktop {
+        background-image: url(/assets/contact/desktop/image-hero.jpg);
+        background-size: 635px 720px;
+        opacity: 1;
     }
     .heritage {
         display: flex;
@@ -885,6 +912,12 @@
                 width: 100%;
                 height: 320px;
             }
+        }
+    }
+    .about {
+        &__textbox {
+            height: 503px;
+            width: 635px;
         }
     }
 }
