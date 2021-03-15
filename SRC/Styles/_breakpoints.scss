@@ -76,6 +76,17 @@
     .about-us__image-tablet {
         display: none;
     }
+    .portfolio__image-mobile {
+        display: none;
+    }
+    .portfolio__image-tablet {
+        display: inline;
+        width: 100%;
+        height: 240px;
+        display: flex;
+        cursor: pointer;
+        position: relative;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -457,6 +468,10 @@
     .leaders__card-4 {
         grid-area: leaders__card-4;
     }
+    .portfolio {
+        padding: 0px 97px;
+        margin-top: 0px;
+    }
 }
 @media screen and (min-width: 1024px) {
     .hello {
@@ -738,8 +753,6 @@
         &__card {
             width: unset;
             margin-bottom: 64px;
-            &-image {
-            }
         }
         &__textbox {
             width: 228px;
@@ -748,6 +761,85 @@
     }
     .icons {
         display: none;
+    }
+    .portfolio__image-desktop {
+        display: inline;
+        width: 100%;
+        max-width: 350px;
+        height: 560px;
+        display: flex;
+        cursor: pointer;
+        position: relative;
+    }
+    .portfolio__image-tablet {
+        display: none;
+    }
+    .portfolio__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        margin: 0 auto;
+        row-gap: 8px;
+        max-width: 1100px;
+        column-gap: 30px;
+        grid-template-areas:
+            "portfolio__project-1 portfolio__project-2 portfolio__project-3"
+            "portfolio__project-4 portfolio__project-5 portfolio__project-6"
+            "portfolio__project-7 portfolio__project-8 portfolio__project-9"
+            "portfolio__project-10 portfolio__project-11 portfolio__project-12";
+    }
+
+    .portfolio__project-1 {
+        grid-area: portfolio__project-1;
+    }
+
+    .portfolio__project-2 {
+        grid-area: portfolio__project-2;
+    }
+
+    .portfolio__project-3 {
+        grid-area: portfolio__project-3;
+    }
+
+    .portfolio__project-4 {
+        grid-area: portfolio__project-4;
+    }
+
+    .portfolio__project-5 {
+        grid-area: portfolio__project-5;
+    }
+
+    .portfolio__project-6 {
+        grid-area: portfolio__project-6;
+    }
+
+    .portfolio__project-7 {
+        grid-area: portfolio__project-7;
+    }
+
+    .portfolio__project-8 {
+        grid-area: portfolio__project-8;
+    }
+
+    .portfolio__project-9 {
+        grid-area: portfolio__project-9;
+    }
+
+    .portfolio__project-10 {
+        grid-area: portfolio__project-10;
+    }
+
+    .portfolio__project-11 {
+        grid-area: portfolio__project-11;
+    }
+
+    .portfolio__project-12 {
+        grid-area: portfolio__project-12;
+    }
+    .portfolio__textbox {
+        bottom: 40px;
+        left: 40px;
+        top: unset;
     }
 }
 @media screen and (min-width: 1280px) {
