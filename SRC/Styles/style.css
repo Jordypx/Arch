@@ -637,6 +637,7 @@ nav ul li:last-child {
   margin-right: auto;
   width: 91.4666%;
   margin-bottom: 72px;
+  color: #1b1d23;
 }
 
 .heritage__textbox h2 {
@@ -702,6 +703,31 @@ nav ul li:last-child {
 
 .heritage__image {
   display: none;
+}
+
+.contact__info p {
+  color: #60636d;
+  margin-bottom: 15px;
+}
+
+.contact__box h4 {
+  margin-bottom: 20px;
+}
+
+.m-left {
+  margin-left: 7px;
+}
+
+.view {
+  margin-top: 25px;
+  color: #1b1d23 !important;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+#mapid {
+  height: 480px;
+  margin-bottom: 200px;
 }
 
 @media screen and (min-width: 560px) {
@@ -1406,7 +1432,19 @@ nav ul li:last-child {
   }
   .about__textbox {
     height: 503px;
-    width: 715px;
+    width: 725px;
+  }
+  .about__heading {
+    font-size: 200px;
+    line-height: 200px;
+    text-align: right;
+    letter-spacing: -5px;
+    top: -88px;
+    right: 98px;
+  }
+  .about__textbox {
+    padding-top: 235px;
+    padding-left: 182px;
   }
   .about-image-desktop {
     background-image: url(/assets/about/desktop/image-hero.jpg);
@@ -1440,6 +1478,9 @@ nav ul li:last-child {
   .heritage__textbox p {
     width: 380px;
     height: 350px;
+  }
+  .contact__textbox {
+    width: 250px;
   }
   .grid-container {
     max-width: unset;
@@ -1529,6 +1570,14 @@ nav ul li:last-child {
     left: 40px;
     top: unset;
   }
+  .contact__box {
+    padding-top: 110px;
+  }
+  .contact {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -1541,6 +1590,14 @@ nav ul li:last-child {
     max-width: 1110px;
     padding: 0px;
     margin-bottom: 200px;
+  }
+  .about__textbox {
+    padding-top: 235px;
+    padding-left: 182px;
+    right: -7px;
+  }
+  .about__heading {
+    right: 7px;
   }
   .heritage__image {
     width: unset;

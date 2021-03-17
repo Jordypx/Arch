@@ -6,8 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/SRC/Styles/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
-
-  <title>Frontend Mentor | Arch Studio Website Challenge</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+  <title>Contact | Arch Studio Website Challenge</title>
 </head>
 
 <body>
@@ -16,7 +21,7 @@
 
       <div class="hero__hangdown">
         <div class="hero__line"></div>
-        <h3 class="hero__line-text">ABOUT US
+        <h3 class="hero__line-text">CONTACT
         </h3>
       </div>
       <div class="logo">
@@ -52,80 +57,51 @@
 
           </h1>
           <h2>Tell us about <br> your project</h2>
-          <p>Our small team of world-class professionals will work<br class="tablet"> with you every step of the way.
-            Strong
-            relationships
-            are<br class="tablet"> at the core of everything we do. This extends to the<br class="tablet"> relationship
-            our projects have
-            with their surroundings.</p>
+          <p> We’d love to hear more about your project. Please,<br class="tablet-br"> leave a message below
+            <br class="mobile"> or give
+            us a call. We have two<br class="tablet-br"> offices, one in Texas and one in Tennessee. If you find<br
+              class="tablet-br">
+            yourself nearby, come say hello!
+          </p>
         </div>
       </div>
       <div class="heritage">
-        <div class="heritage__textbox">
-          <h2>Our<br> Heritage
-          </h2>
-          <p>Founded in 2007, we started as a trio of architects. Our complimentary skills and
-            relentless attention to detail turned Arch into one of the most sought after boutique
-            firms in the country.<br><br>
-
-            Speciliazing in Urban Design allowed us to focus on creating exceptional structures that
-            live in harmony with their surroundings. We consider every detail from every surrounding
-            element to inform our designs.<br><br>
-
-            Our small team of world-class professionals provides input on every project.</p>
-        </div>
-        <div class="heritage__image-div">
-          <img src="/assets/about/desktop/image-heritage.jpg" alt="" class="heritage__image">
+        <div class="contact">
+          <div class="heritage__textbox contact__textbox">
+            <h2>Contact <br> Details
+            </h2>
+          </div>
+          <div class="contact__box">
+            <h4>Main Office</h4>
+            <div class="contact__info">
+              <p>
+                Mail: <span class="m-left">archone@mail.com</span> <br> </p>
+              <p>
+                Address : <span class="m-left">1892 Chenoweth Drive TN </span> <br> </p>
+              <p>
+                Phone :<span class="m-left"> 123-456-3451</span> <br>
+              </p>
+              <p class="view">View on Map <img src="/assets/icons/icon-arrow -black.svg" class=" arrow contact__arrow"
+                  alt="arrow"></p>
+            </div>
+          </div>
+          <div class="contact__box">
+            <h4>Office II
+            </h4>
+            <div class="contact__info">
+              <p> Mail: <span class="m-left">archtwo@mail.com</span> <br> </p>
+              <p> Address: <span class="m-left">3399 Wines Lane TX</span <br> </p>
+              <p> Phone: <span class="m-left">832-123-4321</span> <br> </p>
+              </p>
+              <p class="view">View on Map <img src="/assets/icons/icon-arrow -black.svg" class=" arrow contact__arrow"
+                  alt="arrow"></p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <div id="mapid"></div>
 
-    <div class="leaders">
-      <div class="leaders__textbox">
-        <h2>The<br> Leaders
-        </h2>
-      </div>
-      <div class="grid-container">
-        <div class="leaders__card leaders__card-1">
-          <img src="/assets/about/desktop/avatar-jake.jpg" class="leaders__card-image" alt="">
-          <h3> Jake Richards </h3>
-          <h4> Chief Architect</h4>
-          <div class="icons">
-            <img src="/assets/icons/icon-linkedin.svg" class="linkedin" alt="">
-            <img src="/assets/icons/icon-twitter.svg" class="twitter" alt="">
-          </div>
-        </div>
-
-        <div class="leaders__card leaders__card-2"><img src="/assets/about/desktop/avatar-thompson.jpg"
-            class="leaders__card-image" alt="">
-          <h3> Thompson Smith </h3>
-          <h4> Head of Finance</h4>
-          <div class="icons">
-            <img src="/assets/icons/icon-linkedin.svg" class="linkedin" alt="">
-            <img src="/assets/icons/icon-twitter.svg" class="twitter" alt="">
-          </div>
-        </div>
-
-        <div class="leaders__card leaders__card-3"><img src="/assets/about/desktop/avatar-jackson.jpg"
-            class="leaders__card-image" alt="">
-          <h3> Jackson Rourke </h3>
-          <h4> Lead Designer</h4>
-          <div class="icons">
-            <img src="/assets/icons/icon-linkedin.svg" class="linkedin" alt="">
-            <img src="/assets/icons/icon-twitter.svg" class="twitter" alt="">
-          </div>
-        </div>
-        <div class="leaders__card leaders__card-4"><img src="/assets/about/desktop/avatar-maria.jpg"
-            class="leaders__card-image" alt="">
-          <h3> Maria Simpson </h3>
-          <h4> Senior Architect</h4>
-          <div class="icons">
-            <img src="/assets/icons/icon-linkedin.svg" class="linkedin" alt="">
-            <img src="/assets/icons/icon-twitter.svg" class="twitter" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
     <section>
       <div class="footer">
         <div class="footer__image-div">
@@ -148,15 +124,17 @@
           </ul>
 
           <form method="get" action="/SRC/Pages/portfolio.html">
-            <button type="submit" class="footer__btn btn"> See Our Portfolio <img src="/assets/icons/icon-arrow.svg"
-                class="arrow">
+            <button type="submit" class="footer__btn btn"> See Our Portfolio <img
+                src="/assets/icons/icon-arrow -black.svg" class="arrow">
             </button>
           </form>
         </div>
       </div>
     </section>
   </div>
+
   <script src=" /app.js"> </script>
+
 </body>
 
 </html>
@@ -194,23 +172,16 @@ See Our Portfolio -->
   Contact
 
   
-  We’d love to hear more about your project. Please, leave a message below or give 
-  us a call. We have two offices, one in Texas and one in Tennessee. If you find 
-  yourself nearby, come say hello!
+
 
   Contact Details
 
   Main Office
-  Mail:	archone@mail.com
-  Address: 1892 Chenoweth Drive TN
-  Phone: 123-456-3451
+
 
   View on Map
 
-  Office II
-  Mail: archtwo@mail.com
-  Address: 3399 Wines Lane TX
-  Phone: 832-123-4321
+  
 
   View on Map
 

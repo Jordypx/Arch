@@ -51,6 +51,7 @@
         margin-right: auto;
         width: 91.4666%;
         margin-bottom: 72px;
+        color: #1b1d23;
         h2 {
             margin-bottom: 30px;
         }
@@ -109,4 +110,33 @@
 
 .heritage__image {
     display: none;
+}
+
+.contact__info {
+    p {
+        color: #60636d;
+        margin-bottom: 15px;
+    }
+}
+
+.contact__box {
+    h4 {
+        margin-bottom: 20px;
+    }
+}
+
+.m-left {
+    margin-left: 7px;
+}
+
+.view {
+    margin-top: 25px;
+    color: #1b1d23 !important;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+#mapid {
+    height: 480px;
+    margin-bottom: 200px;
 }
