@@ -195,7 +195,11 @@
         display: none;
     }
     .map {
-        padding: 0px 97px;
+        width: 80%;
+        margin: 0 auto;
+        max-width: 1110px;
+        padding: 0px;
+        margin-bottom: 160px;
     }
 
     .menu {
@@ -755,6 +759,7 @@
         background-size: 635px 720px;
         opacity: 1;
     }
+
     .heritage {
         display: flex;
         justify-content: space-between;
@@ -778,6 +783,11 @@
                 height: 350px;
             }
         }
+    }
+    .connect {
+    }
+    .connect__textbox {
+        margin-right: 30px;
     }
     .contact__textbox {
         width: 250px;

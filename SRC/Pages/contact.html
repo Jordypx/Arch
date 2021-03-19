@@ -68,7 +68,7 @@
       <div class="heritage">
         <div class="contact">
           <div class="heritage__textbox contact__textbox">
-            <h2>Contact <br> Details
+            <h2>Contact <br class="tablet-br"> Details
             </h2>
           </div>
           <div class="contact__box">
@@ -102,6 +102,38 @@
     </section>
     <div class="map">
       <div id="mapid"></div>
+    </div>
+    <div class="heritage connect">
+
+      <div class="heritage__textbox contact__textbox connect__textbox">
+        <h2>Connect
+          <br class="tablet-br">with us
+        </h2>
+      </div>
+      <div class="contact-us__form">
+        <form id="contact-form">
+          <div class="form-item">
+            <label for="name"></label>
+            <input type="text" id="name" placeholder="Name">
+            <p class="italic">Can't be empty</p>
+          </div>
+
+          <div class="form-item">
+            <label for="email"></label>
+            <input type="email" id="email" placeholder="Email Address">
+            <p class="italic">Email invalid</p>
+          </div>
+
+
+          <div class="form-item">
+            <label for="textarea"></label>
+            <textarea placeholder="Your Message" name="Message" id="message" cols="3" rows="3"></textarea>
+            <p class="italic">Can't be empty</p>
+          </div>
+          <button class="btn connect__btn" id="submit" type="submit" form="contact-form"><img
+              src="/assets/icons/icon-arrow.svg" alt=""></button>
+        </form>
+      </div>
     </div>
     <section>
       <div class="footer">
