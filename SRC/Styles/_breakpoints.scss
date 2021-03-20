@@ -2,6 +2,7 @@
     .mobile {
         display: none;
     }
+
     .featured__h1 {
         display: inline;
         position: absolute;
@@ -200,6 +201,9 @@
         max-width: 1110px;
         padding: 0px;
         margin-bottom: 160px;
+    }
+    .box1 {
+        margin-bottom: 70px;
     }
 
     .menu {
@@ -488,6 +492,21 @@
         padding: 0px 97px;
         margin-top: 0px;
     }
+    .box1,
+    .box2 {
+        display: flex;
+        align-items: center;
+    }
+
+    .view {
+        margin-left: 100px;
+    }
+    .view-2 {
+        margin-left: 146.8px;
+    }
+    .contact {
+        margin-bottom: 200px;
+    }
 }
 @media screen and (min-width: 1024px) {
     .hello {
@@ -569,6 +588,9 @@
                 position: relative;
             }
         }
+    }
+    .desktop-br {
+        display: inline;
     }
     .hero__image-desktop {
         display: inline;
@@ -784,14 +806,10 @@
             }
         }
     }
-    .connect {
-    }
-    .connect__textbox {
-        margin-right: 30px;
-    }
     .contact__textbox {
-        width: 250px;
+        width: 250px !important;
     }
+
     .grid-container {
         max-width: unset;
         margin: unset;
@@ -902,10 +920,28 @@
     }
     .contact {
         display: flex;
-        justify-content: space-between;
-        -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
+        justify-content: space-around;
         flex-grow: 1;
+        margin-bottom: 0px;
+    }
+    .contact-us__form {
+        width: 730px;
+    }
+    .connect {
+        flex-direction: row;
+    }
+    .connect__textbox {
+        width: 380px;
+        h2 {
+            width: 350px;
+        }
+    }
+    .box1,
+    .box2 {
+        display: inline;
+    }
+    .view {
+        margin-left: unset;
     }
 }
 @media screen and (min-width: 1280px) {
