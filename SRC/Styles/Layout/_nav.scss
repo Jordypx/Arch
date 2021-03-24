@@ -48,6 +48,12 @@ nav {
     li {
         margin-left: 48px;
     }
+    a {
+        transition: 0.6s all ease;
+    }
+    a:hover {
+        color: $black;
+    }
 }
 .hamburger {
     &__image {

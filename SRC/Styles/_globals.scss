@@ -38,10 +38,6 @@ h2 {
     letter-spacing: -1.42857px;
 }
 
-// h3 {
-// }
-// h4 {
-// }
 p {
     font-weight: $regular;
     font-size: $font-xsm;
@@ -59,6 +55,11 @@ p {
     font-size: $font-xsm;
     line-height: 25px;
     font-weight: 500;
+    cursor: pointer;
+    transition: all 1s ease;
+}
+.btn:hover {
+    background-color: $grey;
 }
 
 .tablet {
@@ -72,4 +73,7 @@ p {
 .rel {
     position: absolute;
     top: 0px;
+}
+.arrow-white {
+    color: $white;
 }
