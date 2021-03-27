@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/SRC/Styles/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <title>Frontend Mentor | Arch Studio Website Challenge</title>
 </head>
 
@@ -16,10 +17,10 @@
 
       <div class="hero__hangdown">
         <div class="hero__line"></div>
-        <h3 class="hero__line-text">HOME
+        <h3 class="hero__line-text" data-aos="zoom-out">HOME
         </h3>
       </div>
-      <div class="logo">
+      <div class="logo" data-aos="fade-right">
         <a href="/index.html"><img src="/assets/logo.svg" alt="logo"></a>
       </div>
       <button class="hamburger__button">
@@ -27,7 +28,7 @@
         <img src="/assets/icons/icon-close.svg" alt="Close menu" class="hamburger__image close">
 
       </button>
-      <ul class="menu">
+      <ul class="menu" data-aos="fade-right">
         <li><a href="/src/Pages/portfolio.html">Portfolio</a></li>
         <li><a href="/src/Pages/about.html"> About Us </a></li>
         <li><a href="/src/Pages/contact.html">Contact</a></li>
@@ -37,7 +38,7 @@
     </nav>
 
     <section>
-      <div class="hero">
+      <div class="hero" data-aos="fade-right">
 
         <div class="hero__image-div">
           <div class="slider">
@@ -141,94 +142,21 @@
                   </div>
                 </div>
               </div>
-              <!--slide images end-->
-              <!--automatic navigation start-->
-
-              <!--automatic navigation end-->
             </div>
-            <!--manual navigation start-->
             <div class="navigation-manual">
               <label for="radio1" class="manual-btn">01</label>
               <label for="radio2" class="manual-btn">02</label>
               <label for="radio3" class="manual-btn">03</label>
               <label for="radio4" class="manual-btn">04</label>
             </div>
-            <!--manual navigation end-->
           </div>
-          <!--image slider end-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          <!-- <div class="slider">
-            <div class="slides">
-              <div class="slide first">
-                <img src="/assets/home/desktop/image-hero-paramour.jpg" alt="">
-              </div>
-              <div class="slide ">
-                <img src="/assets/home/desktop/image-hero-seraph.jpg" alt="">
-              </div>
-              <div class="slide ">
-                <img src="/assets/home/desktop/image-hero-federal.jpg" alt="">
-              </div>
-              <div class="slide ">
-                <img src="/assets/home/desktop/image-hero-trinity.jpg" alt="">
-              </div>
-            </div>
-          </div>
-          <div class="hero__slide">
-
-            <input type="radio" name="radio-btn" id="radio1" class="hero__button hero__button-1 active">
-            <input type="radio" name="radio-btn" id="radio2" class="hero__button hero__button-2 active">
-            <input type="radio" name="radio-btn" id="radio3" class="hero__button hero__button-3 active">
-            <input type="radio" name="radio-btn" id="radio4" class="hero__button hero__button-4 active">
-          </div>
-          <div class="navigation-manual">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-            <label for="radio4" class="manual-btn"></label>
-          </div> -->
-          <!-- <div class="hero__overlay hero__overlay-tablet">
-          </div>
-       
-
-
-
-          <div class="hero__textbox">
-            <h1> Project Paramour</h1>
-            <p> Project made for an art museum near Southwest<br class="desktop"> London. Project Paramour is a
-              statement of bold,<br class="desktop"> modern
-              architecture. </p>
-            <form method="get" action="/SRC/Pages/portfolio.html">
-              <button type="submit" class="hero__btn btn">See Our Portfolio <img src="/assets/icons/icon-arrow.svg"
-                  class="arrow">
-              </button>
-            </form>
-          </div>
-         
-          -->
         </div>
-
-
       </div>
 
     </section>
 
     <section>
-      <div class="welcome">
+      <div class="welcome" data-aos="fade-up">
         <div class="welcome__textbox">
           <h1 class="tablet">Welcome</h1>
           <h2> Welcome to<br> Arch Studio
@@ -249,7 +177,7 @@
   </div>
   </section>
 
-  <section>
+  <section data-aos="fade-down">
     <div class="about-us">
       <div class="about-us__image-div ">
 
@@ -282,7 +210,7 @@
       </div>
       <div class="featured__flex">
 
-        <div class="featured__card">
+        <div class="featured__card" data-aos="flip-right">
           <a class="" href="/SRC/Pages/portfolio.html">
 
             <div class="featured__overlay featured__overlay-tablet">
@@ -303,7 +231,7 @@
             </div>
           </a>
         </div>
-        <div class="featured__card">
+        <div class="featured__card" data-aos="flip-right">
           <a class="work1" href="/SRC/Pages/portfolio.html">
 
             <div class="featured__overlay featured__overlay-tablet"></div>
@@ -326,7 +254,7 @@
 
         </div>
 
-        <div class="featured__card">
+        <div class="featured__card" data-aos="flip-right">
           <a class="" href="/SRC/Pages/portfolio.html">
 
             <div class="featured__overlay featured__overlay-tablet"></div>
@@ -431,6 +359,9 @@
 
 
   <script src=" /app.js"> </script>
+  <script src=" /carousel.js
+  "> </script>
+
 </body>
 
 </html>

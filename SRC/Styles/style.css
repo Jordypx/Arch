@@ -1678,6 +1678,15 @@ textarea {
   .leaders__card-1:hover .leaders__card-image {
     opacity: 0.3;
   }
+  .leaders__card-2:hover .leaders__card-image {
+    opacity: 0.3;
+  }
+  .leaders__card-3:hover .leaders__card-image {
+    opacity: 0.3;
+  }
+  .leaders__card-4:hover .leaders__card-image {
+    opacity: 0.3;
+  }
   .leaders__card-1:hover .icons {
     opacity: 1;
   }
