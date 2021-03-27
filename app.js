@@ -6,11 +6,10 @@ hamburger.addEventListener('click', () => {
     menu.classList.toggle('show');
 })
 
-var counter = 1;
-setInterval(function () {
-    document.getElementById('radio' + counter).checked = true;
-    counter++;
-    if (counter > 4) {
-        counter = 1;
-    }
-}, 3000);
+
+
+AOS.init({
+    offset: 200, // offset (in px) from the original trigger point
+    delay: 0, // values from 0 to 3000, with step 50ms
+    duration: 1000 // values from 0 to 3000, with step 50ms
+});
