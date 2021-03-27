@@ -52,3 +52,17 @@
 .portfolio__image-desktop {
     display: none;
 }
+
+.portfolio__project {
+    cursor: pointer;
+}
+
+.portfolio__overlay:hover {
+    opacity: 0.3;
+    background-color: #fff;
+    transition: 0.2s all ease;
+}
+
+.portfolio__overlay {
+    transition: 0.2s all ease;
+}
