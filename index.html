@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/SRC/Styles/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
   <title>Frontend Mentor | Arch Studio Website Challenge</title>
 </head>
 
@@ -43,13 +43,10 @@
         <div class="hero__image-div">
           <div class="slider">
             <div class="slides">
-              <!--radio buttons start-->
               <input type="radio" name="radio-btn" id="radio1">
               <input type="radio" name="radio-btn" id="radio2" class="hero__button hero__button-1 active">
               <input type="radio" name="radio-btn" id="radio3">
               <input type="radio" name="radio-btn" id="radio4">
-              <!--radio buttons end-->
-              <!--slide images start-->
               <div class="slide first">
                 <div class="hero__overlay hero__overlay-tablet">
                 </div>
@@ -77,7 +74,6 @@
                 <img src=" /assets/home/mobile/image-hero-seraph.jpg" alt="" class="hero__image">
                 <img src="/assets/home/tablet/image-hero-seraph.jpg" alt="" class="hero__image-tablet ">
                 <div class="rel">
-
                   <div class="hero__textbox">
                     <h1> Seraph<br class="desktop"> Station
                     </h1>
@@ -100,7 +96,6 @@
                 <img src=" /assets/home/mobile/image-hero-federal.jpg" alt="" class="hero__image">
                 <img src="/assets/home/tablet/image-hero-federal.jpg" alt="" class="hero__image-tablet">
                 <div class="rel">
-
                   <div class="hero__textbox">
                     <h1> Federal II<br class="desktop"> Tower
 
@@ -123,19 +118,15 @@
                 <img src=" /assets/home/mobile/image-hero-trinity.jpg" alt="" class="hero__image">
                 <img src="/assets/home/tablet/image-hero-trinity.jpg" alt="" class="hero__image-tablet">
                 <div class="rel">
-
                   <div class="hero__textbox hero__textbox-trinity">
                     <h1> Trinity Bank<br class="desktop"> Tower
-
-
-
                     </h1>
                     <p>
                       Trinity Bank challenged us to make a concept for a 84 story building located
                       in the middle of a city with a high earthquake frequency. For this project we
                       used curves<br class="desktop"> to blend design and stability to meet our objectives.</p>
                     <form method="get" action="/SRC/Pages/portfolio.html">
-                      <button type="submit" class="hero__btn btn">See Our Portfolio <img
+                      <button type="submit" class="hero__btn btn trinity-btn">See Our Portfolio <img
                           src="/assets/icons/icon-arrow.svg" class="arrow">
                       </button>
                     </form>
@@ -152,9 +143,7 @@
           </div>
         </div>
       </div>
-
     </section>
-
     <section>
       <div class="welcome" data-aos="fade-up">
         <div class="welcome__textbox">
@@ -176,14 +165,12 @@
       </div>
   </div>
   </section>
-
   <section data-aos="fade-down">
     <div class="about-us">
-      <div class="about-us__image-div ">
+      <div class="about-us__image-div">
 
         <img src="/assets/home/mobile/image-small-team.jpg" alt="" class="about-us__image">
         <img src="/assets/home/desktop/image-small-team.jpg" alt="" class="about-us__image-tablet desktop">
-
       </div>
       <div class="about-us__textbox">
         <h2> Small team,<br> big ideas
@@ -194,38 +181,31 @@
           </button>
         </form>
       </div>
-
   </section>
-
   <section>
     <div class="featured">
       <div class="featured__tablet">
-
-        <h2>Featured</h2>
+        <div data-aos="fade-left">
+          <h2>Featured</h2>
+        </div>
         <form method="get" action="/SRC/Pages/portfolio.html">
-          <button type="submit" class="featured__btn-header btn tablet"> See all
+          <button type="submit" class="featured__btn-header btn tablet" data-aos="fade-right"> See all
             <img src="/assets/icons/icon-arrow.svg" class="arrow">
           </button>
         </form>
       </div>
       <div class="featured__flex">
-
         <div class="featured__card" data-aos="flip-right">
           <a class="" href="/SRC/Pages/portfolio.html">
-
             <div class="featured__overlay featured__overlay-tablet">
             </div>
-
             <img src="assets/portfolio/mobile/image-del-sol.jpg" class="featured__image" alt="">
             <img src="assets/portfolio/tablet/image-del-sol.jpg" class="featured__image-tablet" alt="">
             <img src="assets/portfolio/desktop/image-del-sol.jpg" class="featured__image-desktop desktop" alt="">
-
             <div class="work2">
               <h1 class="featured__h1 featured__h1-1">1</h1>
-
             </div>
             <div class="featured__textbox">
-
               <h4> Project Del Sol</h4>
               <p>View All Projects</p>
             </div>
@@ -233,27 +213,19 @@
         </div>
         <div class="featured__card" data-aos="flip-right">
           <a class="work1" href="/SRC/Pages/portfolio.html">
-
             <div class="featured__overlay featured__overlay-tablet"></div>
-
             <img src="assets/portfolio/mobile/image-228b.jpg" class="featured__image" alt="">
             <img src="assets/portfolio/tablet/image-228b.jpg" class="featured__image-tablet" alt="">
             <img src="assets/portfolio/desktop/image-228b.jpg" class="featured__image-desktop desktop" alt="">
-
             <div class="work2">
               <h1 class="featured__h1">2</h1>
-
             </div>
             <div class="featured__textbox">
-
-
               <h4> 228B Tower</h4>
               <p>View All Projects</p>
             </div>
           </a>
-
         </div>
-
         <div class="featured__card" data-aos="flip-right">
           <a class="" href="/SRC/Pages/portfolio.html">
 
