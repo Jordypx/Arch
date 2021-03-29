@@ -1059,3 +1059,13 @@
         max-width: 1440px;
     }
 }
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        /* Asterisk is universal selector */
+        transition-property: none !important;
+        transform: none !important;
+        animation: none !important;
+        background-attachment: scroll !important;
+    }
+}

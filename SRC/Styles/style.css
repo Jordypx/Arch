@@ -544,9 +544,6 @@ nav ul li:last-child {
   font-size: 15px;
   line-height: 25px;
 }
-.footer a:hover {
-  color: #000;
-}
 
 .footer .footer__list {
   padding-top: 92px;
@@ -1359,9 +1356,7 @@ textarea {
     gap: 0px 0px;
     column-gap: 11px;
     max-width: 600px;
-    grid-template-areas:
-      "leaders__card-1 leaders__card-2"
-      "leaders__card-3 leaders__card-4";
+    grid-template-areas: "leaders__card-1 leaders__card-2" "leaders__card-3 leaders__card-4";
   }
   .leaders__card-1 {
     grid-area: leaders__card-1;
@@ -1758,11 +1753,7 @@ textarea {
     row-gap: 8px;
     max-width: 1100px;
     column-gap: 30px;
-    grid-template-areas:
-      "portfolio__project-1 portfolio__project-2 portfolio__project-3"
-      "portfolio__project-4 portfolio__project-5 portfolio__project-6"
-      "portfolio__project-7 portfolio__project-8 portfolio__project-9"
-      "portfolio__project-10 portfolio__project-11 portfolio__project-12";
+    grid-template-areas: "portfolio__project-1 portfolio__project-2 portfolio__project-3" "portfolio__project-4 portfolio__project-5 portfolio__project-6" "portfolio__project-7 portfolio__project-8 portfolio__project-9" "portfolio__project-10 portfolio__project-11 portfolio__project-12";
   }
   .portfolio__project-1 {
     grid-area: portfolio__project-1;
@@ -1909,6 +1900,16 @@ textarea {
 @media screen and (min-width: 1400px) {
   .hero {
     max-width: 1440px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    /* Asterisk is universal selector */
+    transition-property: none !important;
+    transform: none !important;
+    animation: none !important;
+    background-attachment: scroll !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
